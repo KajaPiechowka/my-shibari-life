@@ -1,5 +1,8 @@
 import React from "react"
+import CheckAge from "./CheckAge"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const App = () => {
+  return <CheckAge />
 }
+
+export default App
