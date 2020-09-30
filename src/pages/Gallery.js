@@ -1,7 +1,7 @@
 import React from "react"
 
-const Gallery = () => {
+const GalleryPage = () => {
   return <h1>Hello World</h1>
 }
 
-export default Gallery
+export default GalleryPage
