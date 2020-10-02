@@ -1,7 +1,7 @@
 import React from "react"
 
-const Events = () => {
+const EventsPage = () => {
   return <h1>Hello World</h1>
 }
 
-export default Events
+export default EventsPage

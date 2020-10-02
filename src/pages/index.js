@@ -1,8 +1,14 @@
 import React from "react"
-import CheckAge from "./CheckAge"
+import CheckAgePage from "./check-age"
+import GlobalStyle from "../style/GlobalStyle"
 
 const App = () => {
-  return <CheckAge />
+  return (
+    <>
+      <GlobalStyle />
+      <CheckAgePage />
+    </>
+  )
 }
 
 export default App
