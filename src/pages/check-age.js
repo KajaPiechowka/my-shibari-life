@@ -5,6 +5,8 @@ import { colors } from "../style/variables"
 import { Link } from "gatsby"
 
 const CheckAgeBackground = styled.div`
+  background-image: url("/hero.jpg");
+  background-position: bottom;
   background-color: ${colors.background};
   width: 100vw;
   height: 100vh;

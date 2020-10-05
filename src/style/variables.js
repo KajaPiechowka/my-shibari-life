@@ -1,11 +1,17 @@
 export const colors = {
   background: "#000000",
-  window: "rgba(153, 152, 152, 0.62)",
+  window: "rgba(153, 152, 152, 0.3)",
   text: "#FFFFFF",
   icon: "#FF6B00",
 }
 
 export const fonts = {
-  main: "Assistant",
-  text: "Nunito sans",
+  main: "Nunito sans",
+  text: "Assistant",
+}
+
+export const media = {
+  desktop: "min-width:1150px",
+  tablet: "max-width:768px",
+  phone: "max-width:576px",
 }
