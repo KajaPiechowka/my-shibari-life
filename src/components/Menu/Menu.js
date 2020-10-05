@@ -1,0 +1,66 @@
+import React from "react"
+import styled from "styled-components"
+import { colors, fonts, media } from "../../style/variables"
+import { Link } from "gatsby"
+
+const MenuWrapper = styled.ul`
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 25%;
+  height: 70%;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 9vh;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 1px 3px 1px rgba(255, 255, 255, 0.04);
+  li {
+    list-style-type: none;
+    font-family: ${fonts.main};
+  }
+`
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${colors.text};
+  text-shadow: 4px 2px 6px rgba(255, 255, 255, 0.4);
+
+  :hover {
+    color: ${colors.icon};
+  }
+`
+
+const Menu = () => {
+  return (
+    <>
+      <MenuWrapper>
+        <li>
+          <StyledLink to="/my-shibari-life">My Shibari Life</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="#about-me">Pagan</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="#contact">Kontakt</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/calendary">Kalendarz</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/events">Wydarzenia</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/gallery">Galeia</StyledLink>
+        </li>
+        <li>
+          <StyledLink to="/shop">Sklep</StyledLink>
+        </li>
+      </MenuWrapper>
+    </>
+  )
+}
+
+export default Menu

@@ -1,8 +1,5 @@
 import styled from "styled-components"
-import {
-  colors,
-  fonts,
-} from "/Users/yyywalet/stronaMama/Gatsby/my_shibari_life/src/style/variables.js"
+import { colors, fonts } from "../../style/variables"
 
 const Button = styled.button`
   background-color: ${colors.background};
