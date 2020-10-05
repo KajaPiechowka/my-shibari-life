@@ -3,6 +3,7 @@ export const colors = {
   window: "rgba(153, 152, 152, 0.3)",
   text: "#FFFFFF",
   icon: "#FF6B00",
+  whiteShadow: "rgba(255, 255, 255, 0.04)",
 }
 
 export const fonts = {

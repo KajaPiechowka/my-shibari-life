@@ -2,16 +2,16 @@ import React from "react"
 import Slider from "../components/Hero/Hero"
 import HamburgerMenu from "../components/Menu/HamburgerMenu"
 import AboutPage from "../components/AboutPage/AboutPage"
+import Navigation from "../components/Navigation/Navigation"
 import { useStaticQuery, graphql } from "gatsby"
 
 /** Component with first page of the website. Here I need to do if with language version of website */
 
-const MyShibariLifePage = ({ data }) => {
+const MyShibariLifePage = () => {
   // EN ? <English Site :
   return (
     <>
-      {console.log(data)}
-      <HamburgerMenu />
+      <Navigation />
       <Slider
         query={useStaticQuery(graphql`
           query {
@@ -21,15 +21,17 @@ const MyShibariLifePage = ({ data }) => {
               nodes {
                 childImageSharp {
                   fluid(maxWidth: 3000, quality: 100) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid_noBase64
                   }
                 }
               }
             }
           }
         `)}
-      />
-      <AboutPage />
+        initDelay={10}
+        transition={3}
+        duration={10}
+      ></Slider>
     </>
   )
 }
