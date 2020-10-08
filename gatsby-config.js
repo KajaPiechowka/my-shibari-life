@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-source-fontawesome`,
+    `gatsby-plugin-breakpoints`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
