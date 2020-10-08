@@ -1,25 +1,87 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { colors, media } from "../../style/variables"
+import { useState } from "react"
 
-const HamburgerIcon = styled(FontAwesomeIcon)`
-  font-size: 5rem;
-  color: ${colors.text};
+const HamburgerMenuWrapper = styled.div`
+  position: fixed;
+  top: 0px;
+  right: 0px;
+`
+
+const HamburgerMenuBtn = styled.button`
+  cursor: pointer;
+  dislpay: inline-block;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  z-index: 10;
   position: absolute;
-  z-index: 2;
-  right: 4%;
-  top: 3%;
+  top: 10px;
+  right: 10px;
+  outline: none;
+`
+const HamburgerBox = styled.span`
+  width: 60px;
+  height: 60px;
+  position: relative;
   display: inline-block;
+  z-index: 10;
+`
 
-  @media (${media.phone}) {
-    font-size: 3.6rem;
+const HamburgerInner = styled.span`
+  width: 100%;
+  z-index: 10;
+  height: 5px;
+  background-color: ${({ open }) => (open ? "transparent" : colors.text)};
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s 0.1s ease-in-out;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: ${colors.text};
+    position: absolute;
+    top: -17px;
+    left: 0;
+    transform: ${({ open }) =>
+      open ? "translateY(17px) rotate(45deg) " : "none"};
+    transition: transform 0.3s 0.1s ease-in-out;
   }
-  @media (${media.desktop}) {
-    display: none;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: ${colors.text};
+    position: absolute;
+    top: 17px;
+    left: 0;
+    transform: ${({ open }) =>
+      open ? "translateY(-17px) rotate(-45deg) " : "none"};
+    transition: transform 0.3s 0.1s ease-in-out;
   }
 `
-const HamburgerMenu = () => <HamburgerIcon icon={faBars} />
+
+const HamburgerMenu = ({ onClick }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleOpen = e => {
+    setIsOpen(prev => !prev)
+    onClick(e)
+  }
+
+  return (
+    <HamburgerMenuWrapper>
+      <HamburgerMenuBtn onClick={handleOpen}>
+        <HamburgerBox>
+          <HamburgerInner open={isOpen} />
+        </HamburgerBox>
+      </HamburgerMenuBtn>
+    </HamburgerMenuWrapper>
+  )
+}
 
 export default HamburgerMenu

@@ -6,12 +6,12 @@ import { Link } from "gatsby"
 const MenuWrapper = styled.ul`
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  width: 25%;
+  width: 300px;
   height: 70%;
-  position: absolute;
-  z-index: 1;
+  z-index: 2;
+  position: fixed;
   right: 0;
-  top: 9vh;
+  top: 10vh;
   font-size: 1.7rem;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ const Menu = () => {
           <StyledLink to="/events">Wydarzenia</StyledLink>
         </li>
         <li>
-          <StyledLink to="/gallery">Galeia</StyledLink>
+          <StyledLink to="/gallery">Galeria</StyledLink>
         </li>
         <li>
           <StyledLink to="/shop">Sklep</StyledLink>
