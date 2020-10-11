@@ -26,7 +26,7 @@ const MenuWrapper = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${colors.text};
-  text-shadow: 4px 2px 6px rgba(255, 255, 255, 0.4);
+  text-shadow: 4px 2px 6px rgba(230, 230, 230, 0.4);
 
   :hover {
     color: ${colors.icon};
