@@ -23,7 +23,7 @@ const Logo = styled.h1`
 `
 
 const OpenMenu = styled.button`
-  background-color: ${colors.background};
+  background-color: rgba(0, 0, 0, 0.8);
   color: ${colors.text};
   font-family: ${fonts.main};
   width: 300px;

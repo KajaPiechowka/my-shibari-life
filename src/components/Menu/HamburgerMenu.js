@@ -7,6 +7,7 @@ const HamburgerMenuWrapper = styled.div`
   position: fixed;
   top: 0px;
   right: 0px;
+  z-index: 10;
 `
 
 const HamburgerMenuBtn = styled.button`
@@ -47,6 +48,7 @@ const HamburgerInner = styled.span`
     position: absolute;
     top: -17px;
     left: 0;
+    z-index: 10;
     transform: ${({ open }) =>
       open ? "translateY(17px) rotate(45deg) " : "none"};
     transition: transform 0.3s 0.1s ease-in-out;
@@ -59,6 +61,7 @@ const HamburgerInner = styled.span`
     position: absolute;
     top: 17px;
     left: 0;
+    z-index: 10;
     transform: ${({ open }) =>
       open ? "translateY(-17px) rotate(-45deg) " : "none"};
     transition: transform 0.3s 0.1s ease-in-out;

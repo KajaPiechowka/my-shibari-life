@@ -11,14 +11,9 @@ export const fonts = {
   text: "Assistant",
 }
 
-// export const media = {
-//   desktop: "min-width:1150px",
-//   tablet: "max-width:768px",
-//   phone: "max-width:576px",
-// }
 export const media = {
   xs: "(max-width: 320px)",
   sm: "(max-width: 720px)",
-  md: "(max-width: 1024px)",
+  md: "(min-width: 1024px)",
   l: "(max-width: 1536px)",
 }
