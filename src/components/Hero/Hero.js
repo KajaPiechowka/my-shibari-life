@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SliderWrapper = styled.div`
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 `
 const SliderHero = () => (
   <SliderWrapper>

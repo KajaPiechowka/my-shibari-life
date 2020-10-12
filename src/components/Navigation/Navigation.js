@@ -8,7 +8,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const NavigationWrapper = styled.div`
   width: 100vw;
   height: 10vh;
-  position: realtive;
+  position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px 1px ${colors.whiteShadow};
