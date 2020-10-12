@@ -22,6 +22,7 @@ const FooterWrapper = styled.div`
 `
 const HeaderWrapper = styled.div`
   @media${media.md} {
+    margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 30px;
   }
@@ -57,17 +58,7 @@ const Icon = styled(FontAwesomeIcon)`
   font-size: 4rem;
   &:hover {
     color: ${colors.icon};
-  }
-  @media${media.md} {
-    font-size: 5rem;
-    margin-left: 30px;
-  }
-`
-const IconInstagram = styled(FontAwesomeIcon)`
-  color: ${colors.icon};
-  font-size: 4rem;
-  &:hover {
-    color: ${colors.text};
+    transform: scale(1.2);
   }
   @media${media.md} {
     font-size: 5rem;
@@ -87,7 +78,7 @@ const Footer = () => {
             <Icon icon={faFacebook} />
           </a>
           <a href="https://www.instagram.com/myshibari.life/">
-            <IconInstagram icon={faInstagramSquare} />
+            <Icon icon={faInstagramSquare} />
           </a>
           <a href="https://vk.com/paganpoetrym?fbclid=IwAR3taYkjXAALiFQNYKq1WyMgCCM-7K3uTGqduawfJEas_cRYbAuI0XXLhmA">
             <Icon icon={faVk} />
