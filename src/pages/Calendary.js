@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer"
 import styled from "styled-components"
 import { colors } from "../style/variables"
 import CalendaryImage from "../components/Calendary/CalendayImage"
-import Calendary from "../components/Calendary/Calenday"
+import Calendary from "../components/Calendary/Calendary"
 
 const CalendaryWrapper = styled.div`
   width: 100vw;
