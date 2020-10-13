@@ -4,7 +4,7 @@ import { colors, fonts, media } from "../../style/variables"
 import { Link } from "gatsby"
 
 const MenuWrapper = styled.ul`
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   width: 300px;
   height: 70%;
