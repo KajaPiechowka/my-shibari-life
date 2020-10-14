@@ -1,4 +1,4 @@
-const path = require(`path`)
+require("dotenv").config()
 
 module.exports = {
   plugins: [
@@ -32,6 +32,12 @@ module.exports = {
           `Nunito sans\:400,600,700`, // you can also specify font weights and styles
         ],
         display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: process.env.API_DATO_CMS,
       },
     },
     // `gatsby-plugin-offline`
