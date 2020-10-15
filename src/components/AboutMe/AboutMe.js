@@ -6,7 +6,6 @@ import Image from "gatsby-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import SectionHeader from "../SectionHeader/SectionHeader"
 import Mobile2Image from "../Mobile2Image/Mobile2Image"
-import { faAutoprefixer } from "@fortawesome/free-brands-svg-icons"
 import Desktop2Image from "../DesktopImage/Desktop2Image"
 
 const AboutPageWrapper = styled.div`
@@ -25,17 +24,17 @@ const Text = styled.p`
   color: ${colors.text};
   text-align: center;
   font-family: ${fonts.text};
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 20px 30px 20px 30px;
   @media${media.md} {
     padding: 0;
-    text-align: left;
+    text-align: right;
   }
 `
 
 const AboutImage = styled(Image)`
   height: auto;
-  width: 90vh;
+  width: 90vw;
 
   @media${media.md} {
     width: 40vw;
@@ -50,9 +49,10 @@ const AboutMeTextWrapper = styled.div`
   }
 `
 const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   @media${media.md} {
     width: 100%;
-    display: flex;
     justify-content: flex-end;
   }
 `
@@ -92,19 +92,25 @@ const AboutMe = () => {
             </SectionHeader>
           </HeaderWrapper>
           <Text>
-            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-            pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-            malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-            porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet
-            enim. Phasellus fermentum in, dolor.{" "}
+            Sztukę Shibari odkryłam w 2010 dzięki mojemu zamiłowaniu do
+            fotografii i stało się ono od tej pory częścią mojego życia i
+            świata. Na początku pozowałam jako modelka linowa, organizowałam
+            eventy takie jak Shibari By Night, by później samej wziąć sznur w
+            dłonie. Zorganizowałam wiele warsztatów riggerów z Polski i ze
+            świata w moim rodzinnym mieście - Krakowie. Uczyłam się minn. u Gan
+            Raptora, Soptika, Yoroi Nicolasa, natomiast w 2018 roku moim sensei
+            został Grzesznik /Shibari Akademia/ certyfikowany uczeń Riccardo
+            Willdties.
           </Text>
 
           {breakpoints.md ? <About /> : null}
           <Text>
-            Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum
-            dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu,
-            luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer
-            aliquam purus.
+            Od wielu lat jestem zapraszana na różne eventy Shibari jako
+            oficjalny fotograf imprez minn. Moscow Knot /Rosja/, Eurix /Niemcy/,
+            Rope Show IL /Izrael/, czy Shi Fest Ukraine. Do tej pory
+            przekazywałam innym swoją wiedzą dotyczącą Shibari na różnych
+            imprezach i rope-jamach, natomiast od 2020 roku zajęłam się
+            prowadzeniem profesjonalnych warsztatów Shibari.
           </Text>
         </AboutMeTextWrapper>
         {breakpoints.md ? <Mobile2Image /> : null}

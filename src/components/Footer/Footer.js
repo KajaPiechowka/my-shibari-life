@@ -11,7 +11,7 @@ import {
 
 const FooterWrapper = styled.div`
   background-color: ${colors.background};
-  width: 100hw;
+  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;

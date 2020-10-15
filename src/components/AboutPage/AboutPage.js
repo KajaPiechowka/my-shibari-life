@@ -9,46 +9,57 @@ import Desktop1Image from "../DesktopImage/Desktop1Image"
 
 const AboutPageWrapper = styled.div`
   background-color: ${colors.background};
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
   justify-content: center;
-  padding-top: 50px;
-  @media${media.md} {
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  height: 80vh;
+  width: 100vw;
 `
 const Text = styled.p`
   color: ${colors.text};
-  text-align: center;
   font-family: ${fonts.text};
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  text-align: left;
   padding: 20px 30px 20px 30px;
-  @media${media.md} {
-    width: 80vh;
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 30px 0px 20px 0;
-  }
+  z-index: 10;
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  width: 70%;
 `
 
 const TitleImageDesktopWrappper = styled.div`
-  @media${media.md} {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0;
 `
 
 const MyImage = styled(Image)`
   z-index: 1;
-  width: 100vw;
+  position: relative;
+  top: 0;
+  right: 0;
   height: auto;
-  @media${media.md} {
-    width: 55vh;
+
+  margin: 0;
+  &::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: radial-gradient(
+      circle,
+      rgba(0, 212, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 99%
+    );
+    z-index: 3;
   }
+`
+
+const HeaderWrapper = styled.div`
+  position: absolute;
+  left: 3rem;
+  top: 5rem;
+  z-index: 6;
 `
 
 const AboutPage = () => {
@@ -68,40 +79,31 @@ const AboutPage = () => {
   return (
     <>
       <AboutPageWrapper>
-        <TitleImageDesktopWrappper>
+        <HeaderWrapper>
           <SectionHeader>
             <h1>My Shibari Life</h1>
           </SectionHeader>
+        </HeaderWrapper>
 
-          {breakpoints.md ? null : (
-            <MyImage
-              backgroundColor="black"
-              fluid={data.file.childImageSharp.fluid}
-            />
-          )}
-        </TitleImageDesktopWrappper>
         <Text>
-          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-          pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-          malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-          porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
-          Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet
-          sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac
-          turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam
-          erat ac ipsum. Integer aliquam purus. <br /> <br />
-          Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel
-          bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer
-          lobortis quis, varius in, purus. Integer ultrices posuere cubilia
-          Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis
-          natoque penatibus et ultrices volutpat. Nullam wisi ultricies a,
-          gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor
-          diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros
-          cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper
-          quam.
+          Powielu latach obcowania ze sznurkami postanowiłam zrobić stronę
+          internetową, by móc podzielić się z szerszym gronem swoją pasją do
+          fotografi i Shibari, oraz pomóc odkryć i poznać ten fascynujący świat.
+          Znajdziecie na niej mnóstwo zdjęć i mam nadzieję inspiracji,
+          informacje o ważnych dla mnie imprezach sznurkowych, oraz tych które
+          sama organizuję i poszerzyć swoją wiedzę na temat sznurków. Jeżeli
+          zdecydujecie się by zacząć podróż drogami Shibari i nauczyć się
+          wiązać, będziecie mogli zapisać się na organizowane przeze mnie
+          warsztaty, lub zakupić najwyższej jakości liny z Włoch i Japoni.
+          <br />
+          Zapraszam
         </Text>
-        {breakpoints.md ? (
-          <MyImage fluid={data.file.childImageSharp.fluid} />
-        ) : null}
+        <TitleImageDesktopWrappper>
+          <MyImage
+            backgroundColor="black"
+            fluid={data.file.childImageSharp.fluid}
+          ></MyImage>
+        </TitleImageDesktopWrappper>
       </AboutPageWrapper>
       {breakpoints.md ? null : <Desktop1Image />}
     </>

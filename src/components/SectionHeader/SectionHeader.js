@@ -8,7 +8,6 @@ const SectionHeader = styled.div`
   background-color: ${colors.window};
   border-radius: 2px;
   position: relative;
-  margin-top: 20px;
   margin-bottom: 40px;
   h1 {
     color: ${colors.text};

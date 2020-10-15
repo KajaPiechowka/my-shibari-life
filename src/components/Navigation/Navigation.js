@@ -34,9 +34,9 @@ const OpenMenu = styled.button`
   top: 0;
   font-size: 2rem;
   border: none;
-  z-index: 2;
+  z-index: 6;
   cursor: pointer;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
   &:hover {
     color: ${colors.icon};
   }

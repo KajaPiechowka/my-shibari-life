@@ -27,10 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Assistant\:400,600,700`,
-          `Nunito sans\:400,600,700`, // you can also specify font weights and styles
-        ],
+        fonts: [`Hind Guntur\:400,500,600`, `Sarabun\:400,500,600`],
         display: "swap",
       },
     },
@@ -44,6 +41,6 @@ module.exports = {
   ],
   siteMetadata: {
     title: "My Shibari Life",
-    author: "Kaja",
+    author: "Kaja Piechówka",
   },
 }

@@ -7,8 +7,8 @@ export const colors = {
 }
 
 export const fonts = {
-  main: "Nunito sans",
-  text: "Assistant",
+  main: "Hind Guntur, sans-serif",
+  text: "Sarabun, sans-serif",
 }
 
 export const media = {

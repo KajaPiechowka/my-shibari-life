@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: ${fonts.main};
     font-size: 16px;
   }
 
@@ -33,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding: 0;
     margin: 0;
+  }
+  img{
+    margin: 0;
+    height: auto;
   }
 `
 

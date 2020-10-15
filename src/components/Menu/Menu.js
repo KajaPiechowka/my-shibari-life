@@ -8,7 +8,7 @@ const MenuWrapper = styled.ul`
   padding: 20px;
   width: 300px;
   height: 70%;
-  z-index: 2;
+  z-index: 6;
   position: fixed;
   right: 0;
   top: 10vh;
@@ -26,7 +26,7 @@ const MenuWrapper = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${colors.text};
-  text-shadow: 4px 2px 6px rgba(230, 230, 230, 0.4);
+  text-shadow: 0px 0px 6px rgba(230, 230, 230, 0.4);
 
   :hover {
     color: ${colors.icon};
@@ -41,7 +41,7 @@ const Menu = () => {
           <StyledLink to="/my-shibari-life">My Shibari Life</StyledLink>
         </li>
         <li>
-          <StyledLink to="#about-me">Pagan</StyledLink>
+          <StyledLink to="/about-me">Pagan</StyledLink>
         </li>
         <li>
           <StyledLink to="#contact">Kontakt</StyledLink>
