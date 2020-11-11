@@ -9,6 +9,7 @@ const NavigationWrapper = styled.div`
   width: 100vw;
   height: 10vh;
   position: absolute;
+  z-index: 10;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px 1px ${colors.whiteShadow};
@@ -26,7 +27,7 @@ const OpenMenu = styled.button`
   background-color: rgba(0, 0, 0, 0.8);
   color: ${colors.text};
   font-family: ${fonts.main};
-  width: 300px;
+  width: 25vw;
   text-align: center;
   height: 10vh;
   position: fixed;
@@ -34,7 +35,7 @@ const OpenMenu = styled.button`
   top: 0;
   font-size: 2rem;
   border: none;
-  z-index: 6;
+  z-index: 10;
   cursor: pointer;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
   &:hover {

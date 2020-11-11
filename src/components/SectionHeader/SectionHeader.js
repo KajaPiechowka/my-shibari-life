@@ -1,6 +1,5 @@
-import React from "react"
 import styled from "styled-components"
-import { colors, fonts, media } from "../../style/variables"
+import { colors, fonts } from "../../style/variables"
 
 const SectionHeader = styled.div`
   width: 300px;

@@ -7,8 +7,8 @@ export const colors = {
 }
 
 export const fonts = {
-  main: "Hind Guntur, sans-serif",
-  text: "Sarabun, sans-serif",
+  main: "Advent Pro, sans-serif",
+  text: "Roboto Condensed, sans-serif",
 }
 
 export const media = {
@@ -16,4 +16,10 @@ export const media = {
   sm: "(max-width: 720px)",
   md: "(min-width: 1024px)",
   l: "(max-width: 1536px)",
+}
+
+export const fontWeight = {
+  xs: "200",
+  s: "300",
+  m: "400",
 }

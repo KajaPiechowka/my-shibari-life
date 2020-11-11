@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import { fonts, colors } from "./variables"
+import { fonts, fontWeight } from "./variables"
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: auto;
   }
+  
 `
 
 export default GlobalStyle

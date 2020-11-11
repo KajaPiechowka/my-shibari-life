@@ -7,6 +7,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+
     `gatsby-source-fontawesome`,
     `gatsby-plugin-breakpoints`,
     {
@@ -27,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Hind Guntur\:400,500,600`, `Sarabun\:400,500,600`],
+        fonts: [`Advent Pro\:200,300,400`, `Roboto Condensed\:300,400`],
         display: "swap",
       },
     },

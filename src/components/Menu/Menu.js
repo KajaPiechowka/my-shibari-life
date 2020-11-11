@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { colors, fonts, media } from "../../style/variables"
+import { colors, fonts } from "../../style/variables"
 import { Link } from "gatsby"
 
 const MenuWrapper = styled.ul`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  width: 300px;
+  width: 25vw;
   height: 70%;
   z-index: 6;
   position: fixed;

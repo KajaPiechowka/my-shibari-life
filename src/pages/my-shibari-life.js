@@ -13,8 +13,8 @@ const MyShibariLifePage = () => {
     <>
       <Navigation />
       <SliderHero />
-      <AboutPage id="my-shibari-life" />
-      <AboutMe id="about-me" />
+      <AboutPage />
+      <AboutMe />
       <Footer id="contact" />
     </>
   )
