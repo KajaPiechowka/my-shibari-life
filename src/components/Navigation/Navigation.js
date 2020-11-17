@@ -37,9 +37,19 @@ const OpenMenu = styled.button`
   border: none;
   z-index: 10;
   cursor: pointer;
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
-  &:hover {
-    color: ${colors.icon};
+
+  :after {
+    content: "";
+    display: block;
+    width: 0%;
+    text-align: center;
+    border-bottom: 0.75px solid white;
+    transition: 0.5s;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  :hover:after {
+    width: 30%;
   }
   &:focus {
     outline: 0;

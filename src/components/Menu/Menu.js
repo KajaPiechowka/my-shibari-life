@@ -7,17 +7,17 @@ const MenuWrapper = styled.ul`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   width: 25vw;
-  height: 70%;
+  height: 50%;
   z-index: 6;
   position: fixed;
   right: 0;
   top: 10vh;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: -1px 1px 3px 1px rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 1px 6px 1px rgba(255, 255, 255, 0.04);
   li {
     list-style-type: none;
     font-family: ${fonts.main};
@@ -27,9 +27,16 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${colors.text};
   text-shadow: 0px 0px 6px rgba(230, 230, 230, 0.4);
-
-  :hover {
-    color: ${colors.icon};
+  :after {
+    content: "";
+    display: block;
+    width: 0%;
+    text-align: center;
+    border-bottom: 0.75px solid white;
+    transition: 0.5s;
+  }
+  :hover:after {
+    width: 100%;
   }
 `
 
@@ -46,9 +53,9 @@ const Menu = () => {
         <li>
           <StyledLink to="#contact">Kontakt</StyledLink>
         </li>
-        <li>
+        {/* <li>
           <StyledLink to="/calendary">Kalendarz</StyledLink>
-        </li>
+        </li> */}
         <li>
           <StyledLink to="/events">Wydarzenia</StyledLink>
         </li>
