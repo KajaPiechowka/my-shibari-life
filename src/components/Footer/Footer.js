@@ -34,16 +34,16 @@ const EmailWrapper = styled.div`
   padding: 30px;
   p {
     font-family: ${fonts.text};
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: ${colors.text};
     text-align: center;
     @media${media.md} {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
   }
   h3 {
     color: ${colors.icon};
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 `
 const IconWrapper = styled.div`
@@ -89,7 +89,7 @@ const Footer = () => {
         <p>
           Chciałbyś dowiedzieć się więcej? <br /> Napisz!
         </p>
-        <h3>email@example.com</h3>
+        <h3>myshibarilife@gmail.com</h3>
       </EmailWrapper>
     </FooterWrapper>
   )

@@ -10,9 +10,9 @@ const ImageContener = styled(BackgroundImage).attrs(props => ({
   backgroundColor: props.bgColor,
 }))`
   width: 100%;
-  height: 50vh;
+  height: 700px;
   z-index: 1;
-  background-position: bottom center !important;
+  background-position: top center !important;
   background-size: cover;
 `
 

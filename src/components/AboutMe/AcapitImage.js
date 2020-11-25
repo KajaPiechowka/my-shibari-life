@@ -8,11 +8,29 @@ import Image from "gatsby-image"
 const imageStyle = {
   width: 500,
   height: 500,
-  zIndex: 2,
+  zindex: 2,
   position: "absolute",
   top: "320px",
   right: "100px",
 }
+
+const StyledImage = styled(Image)`
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 49%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+`
 
 const AcapitImage = () => {
   const data = useStaticQuery(graphql`
@@ -28,7 +46,7 @@ const AcapitImage = () => {
   `)
 
   return (
-    <Image
+    <StyledImage
       style={imageStyle}
       backgroundColor={colors.background}
       fluid={data.file.childImageSharp.fluid}

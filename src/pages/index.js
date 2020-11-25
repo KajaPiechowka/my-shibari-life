@@ -1,12 +1,13 @@
 import React from "react"
-import CheckAgePage from "./check-age"
+
 import GlobalStyle from "../style/GlobalStyle"
+import MyShibariLifePage from "./my-shibari-life"
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <CheckAgePage />
+      <MyShibariLifePage />
     </>
   )
 }

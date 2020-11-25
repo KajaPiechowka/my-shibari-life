@@ -10,7 +10,7 @@ import SectionHeader from "../components/SectionHeader/SectionHeader"
 const AboutMePageWrapper = styled.div`
   background-color: ${colors.background};
   width: 100vw;
-  height: 200vh;
+  height: 150vh;
   position: relative;
 `
 const AboutMeContentWrapper = styled.div`
@@ -33,7 +33,7 @@ const FirstAcapit = styled.p`
   position: absolute;
   left: 50px;
   top: 300px;
-  width: 60%;
+  width: 56%;
   text-align: justify;
   font-family: ${fonts.text};
   font-size: 1.2rem;
@@ -46,7 +46,7 @@ const SecondAcapit = styled.p`
   font-family: ${fonts.text};
   width: 90%;
   font-size: 1.2rem;
-  top: 800px;
+  top: 820px;
 `
 
 const AboutMePage = () => {
@@ -130,8 +130,8 @@ const AboutMePage = () => {
             innymi, bo zawsze będą lepsi i gorsi ode mnie.
           </SecondAcapit>
         </AboutMeContentWrapper>
-        <AboutMeImage />
       </AboutMePageWrapper>
+      <AboutMeImage />
       <Footer />
     </>
   )
