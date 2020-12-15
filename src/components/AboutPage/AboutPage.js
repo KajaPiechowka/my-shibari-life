@@ -13,15 +13,14 @@ const AboutPageWrapper = styled(BackgroundImage).attrs(props => ({
   backgroundColor: props.bgColor,
 }))`
   width: 100%;
-  min-height: 800px;
+  height: auto;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: 1;
-  background-position: right center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
   background-size: contain;
-  padding-left: 10rem;
-  padding-top: 15rem;
 `
 
 const Gradient = styled.div`
@@ -48,7 +47,7 @@ const Gradient2 = styled.div`
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 80%,
     rgba(0, 0, 0, 0.9) 100%
   );
 `
@@ -57,14 +56,13 @@ const Text = styled.p`
   color: ${colors.text};
   font-family: ${fonts.text};
   font-size: 1.2rem;
-  line-height: 2.1rem;
-  text-align: justify;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1.3px;
   z-index: 10;
-  width: 50%;
-`
-
-const HeaderWrapper = styled.div`
-  z-index: 6;
+  margin-top: 60px;
+  width: 90%;
 `
 
 const AboutPage = () => {
@@ -89,11 +87,10 @@ const AboutPage = () => {
       >
         <Gradient />
         <Gradient2 />
-        <HeaderWrapper>
-          <SectionHeader>
-            <h1>My Shibari Life</h1>
-          </SectionHeader>
-        </HeaderWrapper>
+
+        <SectionHeader>
+          <h1>My Shibari Life</h1>
+        </SectionHeader>
 
         <Text>
           &nbsp;&nbsp;&nbsp;&nbsp; Powielu latach obcowania ze sznurkami

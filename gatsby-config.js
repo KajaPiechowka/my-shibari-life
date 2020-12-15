@@ -1,5 +1,11 @@
 require("dotenv").config()
 
+const myCustomQueries = {
+  xs: "(max-width: 540px)",
+  sm: "(min-width: 541px , max-width: 1024px)",
+  md: "(min-width: 1025px)",
+}
+
 module.exports = {
   plugins: [
     `gatsby-plugin-typography`,
@@ -9,7 +15,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
 
     `gatsby-source-fontawesome`,
-    `gatsby-plugin-breakpoints`,
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: myCustomQueries,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

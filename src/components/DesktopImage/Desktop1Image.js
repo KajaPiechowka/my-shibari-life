@@ -8,12 +8,12 @@ const MyImage = styled(BackgroundImage).attrs(props => ({
   fluid: props.imageData,
   backgroundColor: props.bgColor,
 }))`
-  width: 100%;
-  min-height: 800px;
+  width: 100vw;
+  min-height: 300px;
   position: relative;
   z-index: 1;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 `
 const GradientTopBottom = styled.div`
   position: absolute;

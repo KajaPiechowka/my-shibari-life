@@ -12,7 +12,7 @@ const HamburgerMenuWrapper = styled.div`
 
 const HamburgerMenuBtn = styled.button`
   cursor: pointer;
-  dislpay: inline-block;
+  display: inline-block;
   background-color: transparent;
   border: 0;
   margin: 0;
@@ -23,11 +23,15 @@ const HamburgerMenuBtn = styled.button`
   outline: none;
 `
 const HamburgerBox = styled.span`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: relative;
   display: inline-block;
   z-index: 10;
+  @media ${media.sm} {
+    width: 60px;
+    height: 60px;
+  } ;
 `
 
 const HamburgerInner = styled.span`

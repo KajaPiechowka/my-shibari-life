@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { colors, fonts } from "../../style/variables"
+import { colors, fonts, media } from "../../style/variables"
 import { Link } from "gatsby"
 
 const MenuWrapper = styled.ul`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  width: 25vw;
+  width: 100vw;
   height: 50%;
   z-index: 6;
   position: fixed;
@@ -21,6 +21,12 @@ const MenuWrapper = styled.ul`
   li {
     list-style-type: none;
     font-family: ${fonts.main};
+  }
+  @media ${media.sm} {
+    width: 50vw;
+  }
+  @media ${media.md} {
+    width: 25vw;
   }
 `
 const StyledLink = styled(Link)`
