@@ -12,10 +12,9 @@ export const fonts = {
 }
 
 export const media = {
-  xs: "(max-width: 320px)",
-  sm: "(max-width: 720px)",
-  md: "(min-width: 1024px)",
-  l: "(max-width: 1536px)",
+  xs: "(max-width: 540px)",
+  sm: "(min-width: 541px)",
+  md: "(min-width: 1025px)",
 }
 
 export const fontWeight = {

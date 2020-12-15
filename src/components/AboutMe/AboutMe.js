@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { colors, fonts, media } from "../../style/variables"
+import { colors, fonts } from "../../style/variables"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image/index"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
@@ -8,20 +8,23 @@ import SectionHeader from "../SectionHeader/SectionHeader"
 import Mobile2Image from "../Mobile2Image/Mobile2Image"
 import Desktop2Image from "../DesktopImage/Desktop2Image"
 
-const AboutPageWrapper = styled.div`
+const AboutMeWrapper = styled.div`
   background-color: ${colors.background};
   display: flex;
   flex-wrap: wrap;
   padding-top: 50px;
   position: relative;
+  height: auto;
 `
 const Text = styled.p`
   color: ${colors.text};
-  text-align: justify;
   font-family: ${fonts.text};
   font-size: 1.2rem;
-  line-height: 2rem;
-  margin-top: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  width: 90%;
 `
 
 const AboutImage = styled(BackgroundImage).attrs(props => ({
@@ -29,25 +32,27 @@ const AboutImage = styled(BackgroundImage).attrs(props => ({
   fluid: props.imageData,
   backgroundColor: props.bgColor,
 }))`
-  width: 100%;
-  min-height: 800px;
+  width: 100vw;
+  height: 600px;
   display: flex;
   position: relative;
   z-index: 1;
-  background-position: left center;
-  background-size: contain;
-
+  background-position: center;
+  background-size: cover;
   padding-top: 9rem;
 `
 
 const AboutMeTextWrapper = styled.div`
-  width: 45vw;
-  padding-right: 5vw;
-  position: absolute;
-  right: 8rem;
+  width: 100vw;
   z-index: 5;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
 `
-const HeaderWrapper = styled.div``
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -72,14 +77,13 @@ const AboutMe = () => {
 
   return (
     <>
-      <AboutPageWrapper>
-        {breakpoints.md ? null : <About />}
+      <AboutMeWrapper>
         <AboutMeTextWrapper>
           <SectionHeader>
             <h1>Pagan Poetry</h1>
           </SectionHeader>
 
-          <Text>
+          <Text style={{ marginTop: "60px" }}>
             &nbsp;&nbsp;&nbsp;&nbsp;Sztukę Shibari odkryłam w 2010 dzięki mojemu
             zamiłowaniu do fotografii i stało się ono od tej pory częścią mojego
             życia i świata. Na początku pozowałam jako modelka linowa,
@@ -90,8 +94,9 @@ const AboutMe = () => {
             moim sensei został Grzesznik /Shibari Akademia/ certyfikowany uczeń
             Riccardo Willdties.
           </Text>
+          {breakpoints.xs ? <About /> : null}
 
-          <Text>
+          <Text style={{ marginBottom: "100px" }}>
             &nbsp;&nbsp;&nbsp;&nbsp;Od wielu lat jestem zapraszana na różne
             eventy Shibari jako oficjalny fotograf imprez minn. Moscow Knot
             /Rosja/, Eurix /Niemcy/, Rope Show IL /Izrael/, czy Shi Fest
@@ -100,9 +105,7 @@ const AboutMe = () => {
             zajęłam się prowadzeniem profesjonalnych warsztatów Shibari.
           </Text>
         </AboutMeTextWrapper>
-
-        {breakpoints.md ? <Mobile2Image /> : null}
-      </AboutPageWrapper>
+      </AboutMeWrapper>
       {breakpoints.md ? null : <Desktop2Image />}
     </>
   )
