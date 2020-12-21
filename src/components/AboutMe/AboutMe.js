@@ -51,7 +51,6 @@ const AboutMeTextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 50px;
 `
 
 const About = () => {
@@ -98,7 +97,7 @@ const AboutMe = () => {
 
           <Text style={{ marginBottom: "100px" }}>
             &nbsp;&nbsp;&nbsp;&nbsp;Od wielu lat jestem zapraszana na różne
-            eventy Shibari jako oficjalny fotograf imprez minn. Moscow Knot
+            eventy Shibari jako oficjalny fotograf imprez m.in. Moscow Knot
             /Rosja/, Eurix /Niemcy/, Rope Show IL /Izrael/, czy Shi Fest
             Ukraine. Do tej pory przekazywałam innym swoją wiedzą dotyczącą
             Shibari na różnych imprezach i rope-jamach, natomiast od 2020 roku

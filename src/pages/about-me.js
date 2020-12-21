@@ -3,23 +3,28 @@ import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
 import styled from "styled-components"
 import { colors, fonts } from "../style/variables"
-import AboutMeImage from "../components/AboutMe/AboutMeImage"
 import AcapitImage from "../components/AboutMe/AcapitImage"
+import MiddleImage from "../components/AboutMe/MiddleImage"
 import SectionHeader from "../components/SectionHeader/SectionHeader"
 
 const AboutMePageWrapper = styled.div`
   background-color: ${colors.background};
   width: 100vw;
-  height: 150vh;
-  position: relative;
+  display: "flex";
+  flex-direction: "column";
+  padding-top: 300px;
 `
+const BlackDiv = styled.div`
+  width: 100vw;
+  height: 200px;
+  background-color: ${colors.background};
+`
+
 const AboutMeContentWrapper = styled.div`
   width: 100%;
   height: auto;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  flex-direction: column;
+  display: "flex";
+  flex-direction: "column";
 `
 const HeaderHolder = styled.div`
   position: absolute;
@@ -59,9 +64,11 @@ const AboutMePage = () => {
             <h1>Pagan Poetry </h1>
           </SectionHeader>
         </HeaderHolder>
-        <AboutMeContentWrapper>
-          <AcapitImage />
-          <FirstAcapit>
+        <AcapitImage />
+        <BlackDiv />
+        <MiddleImage />
+        {/* <AboutMeContentWrapper> */}
+        {/* <FirstAcapit>
             Z miłości do lin. <br />
             <br /> Chciałabym napisać o sobie jak najmniej, a wstawić jak
             najwięcej zdjęć, ponieważ zawsze umiałam robić zdjęcia, ale nigdy
@@ -87,8 +94,8 @@ const AboutMePage = () => {
             wyzwolił by takie doznania we mnie. I tak odkryłam, że shibari to
             emocje i chciałam nauczyć się wiązać, żeby sama przekazywać te
             emocje.
-          </FirstAcapit>
-          <SecondAcapit>
+          </FirstAcapit> */}
+        {/* <SecondAcapit>
             Nie chcąc podróżować bez drogi, mapy i kompasu spotykałam różnych
             przewodników, lecz powoli zaczęłam się poddawać, ponieważ wciąż nie
             rozumiałam sensu, przekazu, istoty shibari. Na szczęście pewnego
@@ -128,10 +135,10 @@ const AboutMePage = () => {
             uczyć się będę przez całe życie. Idę swoim tempem i z tego tempa
             jestem dumna. W sznurkach zaszłam wysoko, ale nie porównuję się z
             innymi, bo zawsze będą lepsi i gorsi ode mnie.
-          </SecondAcapit>
-        </AboutMeContentWrapper>
+          </SecondAcapit> */}
+        {/* </AboutMeContentWrapper> */}
       </AboutMePageWrapper>
-      <AboutMeImage />
+
       <Footer />
     </>
   )

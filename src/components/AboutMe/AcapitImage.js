@@ -6,12 +6,9 @@ import { colors } from "../../style/variables"
 import Image from "gatsby-image"
 
 const imageStyle = {
-  width: 500,
+  width: "100vw",
   height: 500,
   zindex: 2,
-  position: "absolute",
-  top: "320px",
-  right: "100px",
 }
 
 const StyledImage = styled(Image)`
@@ -19,7 +16,6 @@ const StyledImage = styled(Image)`
     content: "";
     width: 100%;
     height: 100%;
-
     position: absolute;
     top: 0;
     right: 0;
