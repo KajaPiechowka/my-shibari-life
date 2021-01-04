@@ -53,9 +53,9 @@ const Menu = () => {
         <li>
           <StyledLink to="/my-shibari-life">My Shibari Life</StyledLink>
         </li>
-        <li>
+        {/* <li>
           <StyledLink to="/about-me">Pagan</StyledLink>
-        </li>
+        </li> */}
         <li>
           <StyledLink to="#contact">Kontakt</StyledLink>
         </li>
