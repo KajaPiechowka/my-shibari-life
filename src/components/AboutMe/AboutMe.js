@@ -83,25 +83,35 @@ const AboutMe = () => {
           </SectionHeader>
 
           <Text style={{ marginTop: "60px" }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;Sztukę Shibari odkryłam w 2010 dzięki mojemu
-            zamiłowaniu do fotografii i stało się ono od tej pory częścią mojego
-            życia i świata. Na początku pozowałam jako modelka linowa,
-            organizowałam eventy takie jak Shibari By Night, by później samej
-            wziąć sznur w dłonie. Zorganizowałam wiele warsztatów riggerów z
-            Polski i ze świata w moim rodzinnym mieście - Krakowie. Uczyłam się
-            minn. u Gan Raptora, Soptika, Yoroi Nicolasa, natomiast w 2018 roku
-            moim sensei został Grzesznik /Shibari Akademia/ certyfikowany uczeń
-            Riccardo Willdties.
+            &nbsp;&nbsp;&nbsp;&nbsp;Po raz pierwszy spotkałam się z linami około
+            2012 roku, gdy mój znajomy fotograf zaproponował mi pozowanie do
+            zdjęć Shibari. Przez kilka lat pozowałam do zdjęć, nie wchodząc
+            jednak głębiej w temat. Jakiś czas później poznałam człowieka, który
+            wiążąc wyzwolił we mnie silne, nieznane mi dotąd emocje. Ten ktoś
+            znikł a ja już wiedziałam, że chcę poznać od podstaw tę japońską
+            sztukę, tym razem jednak jako osoba wiążąca, by móc pokazać innym to
+            czego sama doświadczyłam podczas niewoli.
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Na początku tej drogi, błądziłąm po różnych
+            warsztatch, ucząc się od wielu nauczycieli, by w końcu znaleźć osobę
+            i styl, które najbardziej mi odpowiadały. I tak zostałam uczniem
+            Pawła Grzesznika, certyfikowanego ucznia Riccardo a styl którego
+            zaczęłam się uczyć to tradycyjna japońska Semenawa w dosłownym
+            tłumaczeniu - lina cierpienia. Ten styl wywodzący się bezpośrednio
+            od Akira Naki to opowieść o dominacji i ulegości a semenawa zaczyna
+            się tam, gdzie modelka mówi dość.
           </Text>
           {breakpoints.xs ? <About /> : null}
 
           <Text style={{ marginBottom: "100px" }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;Od wielu lat jestem zapraszana na różne
-            eventy Shibari jako oficjalny fotograf imprez m.in. Moscow Knot
-            /Rosja/, Eurix /Niemcy/, Rope Show IL /Izrael/, czy Shi Fest
-            Ukraine. Do tej pory przekazywałam innym swoją wiedzą dotyczącą
-            Shibari na różnych imprezach i rope-jamach, natomiast od 2020 roku
-            zajęłam się prowadzeniem profesjonalnych warsztatów Shibari.
+            &nbsp;&nbsp;&nbsp;&nbsp;Od 2018 roku pomagałam mojemu nauczycielowi
+            w prowadzeniu warsztatów a dwa lata później sama zaczęłam prowadzić
+            własne warsztaty w Krakowie. Cały czas się szkolę, doskonalę swoje
+            umiejętności u Grzesznika i Riccardo, by podnieść swój poziom
+            wiązania. Shibari jest dla mnie drogą na całe życie, więc mam
+            nadzieję, że jeszcze długo będę mogła czerpać radość nie tylko z
+            nauczania, ale także z doskonalenia swojego warsztatu. Pagan
           </Text>
         </AboutMeTextWrapper>
       </AboutMeWrapper>
