@@ -6,8 +6,8 @@ import { colors } from "../../style/variables"
 import Image from "gatsby-image"
 
 const imageStyle = {
-  width: "100vw",
-  height: "400px",
+  width: "90vw",
+  height: "auto",
   zindex: 2,
 }
 
@@ -21,7 +21,7 @@ const StyledImage = styled(Image)`
     right: 0;
     background: radial-gradient(
       circle,
-      rgba(0, 0, 0, 0) 49%,
+      rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 80%,
       rgba(0, 0, 0, 1) 100%
     );

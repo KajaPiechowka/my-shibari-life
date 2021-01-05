@@ -56,9 +56,6 @@ const Menu = () => {
         {/* <li>
           <StyledLink to="/about-me">Pagan</StyledLink>
         </li> */}
-        <li>
-          <StyledLink to="#contact">Kontakt</StyledLink>
-        </li>
         {/* <li>
           <StyledLink to="/calendary">Kalendarz</StyledLink>
         </li> */}

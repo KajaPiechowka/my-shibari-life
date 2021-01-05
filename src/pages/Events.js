@@ -22,7 +22,7 @@ const OneEventWrapper = styled.div`
 `
 
 const OneEvent = styled.div`
-  width: 50vw;
+  width: 100vw;
   position: relative;
   z-index: 5;
 
@@ -31,47 +31,48 @@ const OneEvent = styled.div`
   }
 `
 const EventImage = styled.div`
-  width: 90%;
+  width: 100%;
   height: auto;
   position: absolute;
 `
 
 const EventTextWrapperHolder = styled.div`
-  width: 60%;
-  height: 40%;
+  width: 40%;
+  height: 30%;
   background-color: ${colors.window};
   position: absolute;
-  bottom: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
 `
-const EventTextWrapper = styled.div`
-  width: 90%;
-  height: 75%;
+const EventTextWrapper = styled.button`
+  width: 85%;
+  height: 85%;
   background-color: ${colors.background};
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  &:hover {
+    outline: none;
+    transform: scale(1.1);
+  }
 `
 const EventTitle = styled.span`
   font-family: ${fonts.main};
   color: ${colors.text};
-  font-size: 3rem;
-  position: absolute;
-  top: -20px;
-  left: -10px;
+  font-size: 1.1rem;
 `
 const EventDate = styled.span`
   font-family: ${fonts.main};
   color: ${colors.text};
-  font-size: 2rem;
-  position: absolute;
-  right: -10px;
-  bottom: -20px;
+  font-size: 1rem;
 `
 
 const HeaderWrapper = styled.div`
   position: absolute;
-  right: 10rem;
+  left: 2rem;
   top: 10rem;
 `
 

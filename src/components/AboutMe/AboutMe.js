@@ -7,6 +7,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import SectionHeader from "../SectionHeader/SectionHeader"
 import Mobile2Image from "../Mobile2Image/Mobile2Image"
 import Desktop2Image from "../DesktopImage/Desktop2Image"
+import MiddleImage from "./MiddleImage"
 
 const AboutMeWrapper = styled.div`
   background-color: ${colors.background};
@@ -92,6 +93,7 @@ const AboutMe = () => {
             sztukę, tym razem jednak jako osoba wiążąca, by móc pokazać innym to
             czego sama doświadczyłam podczas niewoli.
             <br />
+            <MiddleImage />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;Na początku tej drogi, błądziłąm po różnych
             warsztatch, ucząc się od wielu nauczycieli, by w końcu znaleźć osobę
