@@ -93,16 +93,13 @@ const AboutPage = () => {
         </SectionHeader>
 
         <Text>
-          &nbsp;&nbsp;&nbsp;&nbsp; Powielu latach obcowania ze sznurkami
+          &nbsp;&nbsp;&nbsp;&nbsp; Po wielu latach obcowania ze sznurkami
           postanowiłam zrobić stronę internetową, by móc podzielić się z
-          szerszym gronem swoją pasją do fotografi i Shibari, oraz pomóc odkryć
-          i poznać ten fascynujący świat. Znajdziecie na niej mnóstwo zdjęć i
-          mam nadzieję inspiracji, informacje o ważnych dla mnie imprezach
-          sznurkowych, oraz tych które sama organizuję i poszerzyć swoją wiedzę
-          na temat sznurków. Jeżeli zdecydujecie się by zacząć podróż drogami
-          Shibari i nauczyć się wiązać, będziecie mogli zapisać się na
-          organizowane przeze mnie warsztaty, lub zakupić najwyższej jakości
-          liny z Włoch i Japoni.
+          szerszym gronem swoją pasją do fotografi i Shibari, oraz pomóc innym
+          odkryć i poznać ten fascynujący świat. Znajdziecie na niej mnóstwo
+          zdjęć i mam nadzieję inspiracji, informacje o ważnych dla mnie
+          imprezach sznurkowych, oraz tych które sama organizuję i poszerzyć
+          swoją wiedzę na temat Shibari. <br /> Zapraszam.
           <br />
         </Text>
       </AboutPageWrapper>

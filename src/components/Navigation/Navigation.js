@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { colors, fonts } from "../../style/variables"
+import { colors } from "../../style/variables"
 import Menu from "../../components/Menu/Menu"
 import HamburgerMenu from "../Menu/HamburgerMenu"
 import DesktopMenu from "../Menu/DesktopMenu"

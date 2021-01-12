@@ -1,31 +1,24 @@
 import React from "react"
 import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
-import EventsImage from "../components/Events/EventsImage"
 import styled from "styled-components"
 import { colors, fonts } from "../style/variables"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import SectionHeader from "../components/SectionHeader/SectionHeader"
+import EventsWrapper from "../components/Events/EventsImage"
 
-const EventsWrapper = styled.div`
-  padding-top: 40vh;
-  width: 100vw;
-  background-color: ${colors.background};
-  display: flex;
-  flex-direction: column;
-`
 const OneEventWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: 270px;
   display: flex;
+  margin-top: 100px;
 `
 
 const OneEvent = styled.div`
   width: 100vw;
   position: relative;
   z-index: 5;
-
   p {
     color: ${colors.text};
   }
@@ -44,6 +37,7 @@ const EventTextWrapperHolder = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 0;
 `
 const EventTextWrapper = styled.button`
   width: 85%;
@@ -113,7 +107,6 @@ const EventsPage = () => {
                   <EventImage>
                     <Image fluid={event.imageMain.fluid} />
                   </EventImage>
-
                   <EventTextWrapperHolder style={{ right: 0 }}>
                     <EventTextWrapper>
                       <EventTitle>{event.titlePl}</EventTitle>
@@ -133,7 +126,6 @@ const EventsPage = () => {
                   <EventImage style={{ right: 0 }}>
                     <Image fluid={event.imageMain.fluid} />
                   </EventImage>
-
                   <EventTextWrapperHolder style={{ left: 0 }}>
                     <EventTextWrapper>
                       <EventTitle>{event.titlePl}</EventTitle>
@@ -148,7 +140,7 @@ const EventsPage = () => {
           }
         })}
       </EventsWrapper>
-      <EventsImage />
+
       <Footer />
     </>
   )
