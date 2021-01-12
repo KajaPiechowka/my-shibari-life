@@ -1,12 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
 
-const MyImage = styled(Image)`
-  width: 100vw;
-  height: auto;
-`
+import { colors } from "../../style/variables"
+import BackgroundImage from "gatsby-background-image"
 
 const EventsImage = () => {
   const data = useStaticQuery(graphql`
@@ -20,10 +17,25 @@ const EventsImage = () => {
       }
     }
   `)
+  const imageData = data.file.childImageSharp.fluid
 
   return (
-    <MyImage backgroundColor="black" fluid={data.file.childImageSharp.fluid} />
+    <>
+      <BackgroundImage
+        Tag="section"
+        imageData={imageData}
+        bgColor={colors.background}
+      />
+    </>
   )
 }
 
-export default EventsImage
+const EventsWrapper = styled(EventsImage)`
+  padding-top: 30vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
+
+export default EventsWrapper

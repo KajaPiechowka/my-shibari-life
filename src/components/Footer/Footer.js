@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { colors, fonts, media } from "../../style/variables"
-import SectionHeader from "../SectionHeader/SectionHeader"
+import { colors } from "../../style/variables"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,

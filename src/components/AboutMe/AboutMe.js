@@ -5,7 +5,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image/index"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import SectionHeader from "../SectionHeader/SectionHeader"
-import Mobile2Image from "../Mobile2Image/Mobile2Image"
 import Desktop2Image from "../DesktopImage/Desktop2Image"
 import MiddleImage from "./MiddleImage"
 
@@ -109,11 +108,12 @@ const AboutMe = () => {
           <Text style={{ marginBottom: "100px" }}>
             &nbsp;&nbsp;&nbsp;&nbsp;Od 2018 roku pomagałam mojemu nauczycielowi
             w prowadzeniu warsztatów a dwa lata później sama zaczęłam prowadzić
-            własne warsztaty w Krakowie. Cały czas się szkolę, doskonalę swoje
+            własne warsztaty w Krakowie. Cały czas się uczę, doskonalę swoje
             umiejętności u Grzesznika i Riccardo, by podnieść swój poziom
             wiązania. Shibari jest dla mnie drogą na całe życie, więc mam
             nadzieję, że jeszcze długo będę mogła czerpać radość nie tylko z
-            nauczania, ale także z doskonalenia swojego warsztatu. Pagan
+            nauczania, ale także z doskonalenia swojego warsztatu. <br />
+            <br /> Pagan
           </Text>
         </AboutMeTextWrapper>
       </AboutMeWrapper>
